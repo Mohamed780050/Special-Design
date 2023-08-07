@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a special design" />
+    <!-- Fontawsome Icons -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Special Design</title>
+  </head>
+  <body>
+    <!-- setting box -->
+    <div class="setting-box position-fixed top-0">
+      <div class="toggle text-center bg-white position-absolute">
+        <i class="fa fa-gear gear"></i>
+      </div>
+      <div class="setting-container">
+        <div class="option-box">
+          <h4 class="m-0 text-center">Colors</h4>
+          <ul class="color-list text-center">
+            <li class="active" data-color="#FF9800"></li>
+            <li data-color="#E91E63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03A9F4"></li>
+            <li data-color="#4CAF50"></li>
+          </ul>
+        </div>
+        <div class="option-box text-center random-background">
+          <h4>Random Background</h4>
+          <button class="yes text-light border-0 p-1 active" data-type="Yes">
+            Yes
+          </button>
+          <button class="no text-light border-0 p-1" data-type="No">No</button>
+        </div>
+        <div class="option-box text-center bullets">
+          <h4>Show Bullets</h4>
+          <button class="yes text-light border-0 p-1 active" data-type="Yes">
+            Yes
+          </button>
+          <button class="no text-light border-0 p-1" data-type="No">No</button>
+        </div>
+        <button class="rest">Rest</button>
+      </div>
+    </div>
+    <!-- setting box -->
+    <!-- Nav Bullets -->
+    <nav class="nav-bul position-fixed">
+      <a class="bullet" href="#about">
+        <div class="the-tooltip">About Us</div>
+      </a>
+      <a class="bullet" href="#skill">
+        <div class="the-tooltip">Skills</div>
+      </a>
+      <a class="bullet" href="#gallery">
+        <div class="the-tooltip">Gallery</div>
+      </a>
+      <a class="bullet" href="#timeline">
+        <div class="the-tooltip">Timeline</div>
+      </a>
+      <a class="bullet" href="#features">
+        <div class="the-tooltip">Features</div>
+      </a>
+      <a class="bullet" href="#testimonials">
+        <div class="the-tooltip">Testimonials</div>
+      </a>
+    </nav>
+    <!-- Nav Bullets -->
+    <!-- Landing -->
+    <section class="landing position-relative">
+      <div class="overlay position-absolute w-100 h-100 top-0"></div>
+      <div class="container position-relative">
+        <header class="d-flex position-relative">
+          <div class="logo">
+            <a href="#" class="text-light fw-blod">Special Design</a>
+          </div>
+          <div class="links-holder w-100">
+            <ul class="link d-flex align-items-center h-100">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <button class="toggle-menu">
+            <i class="fa fa-bars fa-2x"></i>
+          </button>
+        </header>
+      </div>
+      <div class="introduction-text position-absolute top-50 text-center">
+        <h1 class="fw-bold">We Are <span>Creative</span> Agency</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          odit nihil ullam nesciunt quidem iste
+        </p>
+      </div>
+    </section>
+    <!-- Landing -->
+    <!-- About Us -->
+    <section class="about" id="about">
+      <div class="container d-flex align-items-center">
+        <div class="info-box p-4">
+          <h2 class="fw-bold">About Us</h2>
+          <p class="m-0">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+            totam facilis ea officia? Qui laudantium, corrupti nesciunt
+            doloremque laborum possimus soluta necessitatibus aspernatur
+            laboriosam, perspiciatis provident reprehenderit at, blanditiis
+            molestiae!
+          </p>
+        </div>
+        <div class="img-box text-center">
+          <img src="Images/about-us.jpg" alt="About us Image" />
+        </div>
+      </div>
+    </section>
+    <!-- About Us -->
+    <!-- Skill -->
+    <section class="skill" id="skill">
+      <div class="container">
+        <h2 class="fw-bold text-center">Our Skills</h2>
+        <div class="skill-cont">
+          <div class="skill-box bg-white d-flex p-3 align-items-center">
+            <div class="skill-name fw-bold">HTML</div>
+            <div
+              class="skill-progress d-flex align-items-center justify-content-center position-relative"
+            >
+              <div class="number fw-bold text-white" data-prog="95%">0%</div>
+              <span class="the-line position-absolute" data-prog="95%"></span>
+            </div>
+          </div>
+          <div class="skill-box bg-white d-flex p-3 align-items-center">
+            <div class="skill-name fw-bold">CSS</div>
+            <div
+              class="skill-progress d-flex align-items-center justify-content-center position-relative"
+            >
+              <div class="number fw-bold text-white" data-prog="85%">0%</div>
+              <span class="the-line position-absolute" data-prog="85%"></span>
+            </div>
+          </div>
+          <div class="skill-box bg-white d-flex p-3 align-items-center">
+            <div class="skill-name fw-bold">JavaScipt</div>
+            <div
+              class="skill-progress d-flex align-items-center justify-content-center position-relative"
+            >
+              <div class="number fw-bold text-white" data-prog="80%">0%</div>
+              <span class="the-line position-absolute" data-prog="80%"></span>
+            </div>
+          </div>
+          <div class="skill-box bg-white d-flex p-3 align-items-center">
+            <div class="skill-name fw-bold">Python</div>
+            <div
+              class="skill-progress d-flex align-items-center justify-content-center position-relative"
+            >
+              <div class="number fw-bold text-white" data-prog="75%">0%</div>
+              <span class="the-line position-absolute" data-prog="75%"></span>
+            </div>
+          </div>
+          <div class="skill-box bg-white d-flex p-3 align-items-center">
+            <div class="skill-name fw-bold">Photoshop</div>
+            <div
+              class="skill-progress d-flex align-items-center justify-content-center position-relative"
+            >
+              <div class="number fw-bold text-white" data-prog="65%">0%</div>
+              <span class="the-line position-absolute" data-prog="65%"></span>
+            </div>
+          </div>
+          <div class="skill-box bg-white d-flex p-3 align-items-center">
+            <div class="skill-name fw-bold">Vue.js</div>
+            <div
+              class="skill-progress d-flex align-items-center justify-content-center position-relative"
+            >
+              <div class="number fw-bold text-white" data-prog="70%">0%</div>
+              <span class="the-line position-absolute" data-prog="70%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill -->
+    <!-- Our Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="fw-bold text-center">Our Gallery</h2>
+        <div class="img-box text-center">
+          <div>
+            <img
+              src="Images/Gallery/01.jpg"
+              alt="Keboard and Mousce"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="Images/Gallery/02.jpg"
+              alt="Table with Devices"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="Images/Gallery/03.jpg"
+              alt="Astronmer with Cola"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="Images/Gallery/04.jpg"
+              alt="Working on the Table"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="Images/Gallery/05.jpg"
+              alt="Section on Table"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="Images/Gallery/06.jpg"
+              alt="Working Place"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="Images/Gallery/07.jpg"
+              alt="Working place with pen"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img
+              src="Images/Gallery/09.jpg"
+              alt="Woking in Laptop"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <img src="Images/Gallery/10.png" alt="Atom Design" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Gallery -->
+    <!-- Timeline -->
+    <section class="timeline" id="timeline">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year">2018</div>
+          <div class="right">
+            <div class="content">
+              <h3 class="fw-bold">Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quae voluptatem ipsa! Eum, adipisci quo. Voluptatibus
+                iure eius fugiat. Asperiores, totam ut aperiam fuga ducimus sed
+                deserunt obcaecati. Incidunt, veniam.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="content">
+              <h3 class="fw-bold">Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quae voluptatem ipsa! Eum, adipisci quo. Voluptatibus
+                iure eius fugiat. Asperiores, totam ut aperiam fuga ducimus sed
+                deserunt obcaecati. Incidunt, veniam.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="right">
+            <div class="content">
+              <h3 class="fw-bold">Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quae voluptatem ipsa! Eum, adipisci quo. Voluptatibus
+                iure eius fugiat. Asperiores, totam ut aperiam fuga ducimus sed
+                deserunt obcaecati. Incidunt, veniam.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="content">
+              <h3 class="fw-bold">Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis quae voluptatem ipsa! Eum, adipisci quo. Voluptatibus
+                iure eius fugiat. Asperiores, totam ut aperiam fuga ducimus sed
+                deserunt obcaecati. Incidunt, veniam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Timeline -->
+    <!-- Feature -->
+    <div class="feature" id="features">
+      <h2 class="fw-bold text-center mb-5">Features</h2>
+      <div class="container">
+        <div class="feat-box">
+          <img src="Images/icons/Icon_01.png" alt="Statistics" loading="lazy" />
+          <h4 class="fw-bold mt-2 position-relative">Development</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="Images/icons/Icon_02.png" alt="Statistics" loading="lazy" />
+          <h4 class="fw-bold mt-2 position-relative">Development</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="Images/icons/Icon_03.png" alt="Statistics" loading="lazy" />
+          <h4 class="fw-bold mt-2 position-relative">Development</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="Images/icons/Icon_04.png" alt="Statistics" loading="lazy" />
+          <h4 class="fw-bold mt-2 position-relative">Development</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="Images/icons/Icon_05.png" alt="Statistics" loading="lazy" />
+          <h4 class="fw-bold mt-2 position-relative">Development</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="Images/icons/Icon_06.png" alt="Statistics" loading="lazy" />
+          <h4 class="fw-bold mt-2 position-relative">Development</h4>
+          <p>
+            We are professional marketeers, we will do anything you imagine in
+            no time
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Feature -->
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="test-cont">
+          <div class="ts-box">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <div class="person-info">
+              <img src="https://placehold.it/80/DDD" alt="" />
+              <h4>Ahmed Mosaad</h4>
+              <p>CEO At Company</p>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <div class="person-info">
+              <img src="https://placehold.it/80/EEE" alt="" />
+              <h4>Mohamed Ibrahim</h4>
+              <p>CEO At Company</p>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <div class="person-info">
+              <img src="https://placehold.it/80/AAA" alt="" />
+              <h4>Sherief Ashraf</h4>
+              <p>CEO At Company</p>
+            </div>
+          </div>
+          <div class="ts-box">
+            <p>
+              Iam very happy with the product its amazing and i recieve it very
+              fast and the price was amazing.
+            </p>
+            <div class="person-info">
+              <img src="https://placehold.it/80/AAA" alt="" />
+              <h4>Sherief Ashraf</h4>
+              <p>CEO At Company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <!-- Contact Us -->
+    <section class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2 class="fw-bold text-center">Contact Us</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" placeholder="Your Name" name="username" />
+            <input type="text" placeholder="Your Phone" name="phone" />
+            <input type="email" placeholder="Your Email" name="email" />
+            <input type="text" placeholder="Subject" name="subject" />
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Us -->
+    <footer>&COPY; <span class="the-year"></span></footer>
+  </body>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.js"></script>
+</html>
